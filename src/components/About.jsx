@@ -26,7 +26,7 @@ export default function About() {
             Engineering High-Performance Digital Solutions
           </h2>
           <p className="text-slate-400 text-sm sm:text-base mt-4 leading-relaxed">
-            At SQB Tech, we bridge the gap between heavy desktop applications
+            At Tech SQB, we bridge the gap between heavy desktop applications
             and agile, cloud-native web architectures, empowering businesses
             worldwide with production-ready software and custom engineering.
           </p>
@@ -111,7 +111,7 @@ export default function About() {
 
                 {/* Company Subtitle */}
                 <p className="text-xs text-cyan-400 font-semibold tracking-wider uppercase mt-0.5">
-                  SQB Tech
+                  Tech SQB
                 </p>
               </div>
 
@@ -124,7 +124,7 @@ export default function About() {
                   under pressure."
                 </h3>
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  SQB Tech was launched with a single focus: giving businesses
+                  Tech SQB was launched with a single focus: giving businesses
                   immediate access to enterprise-grade desktop utilities and web
                   solutions without complicated procurement cycles or clunky
                   software bloat.

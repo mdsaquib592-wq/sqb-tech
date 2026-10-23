@@ -69,10 +69,10 @@ export default function Contact() {
                     Email Inquiries
                   </p>
                   <a
-                    href="mailto:support@sqbtech.com"
+                    href="mailto:support@techsqb.com"
                     className="text-sm font-bold text-white hover:text-cyan-400 transition-colors"
                   >
-                    support@sqbtech.com
+                    support@techsqb.com
                   </a>
                   <p className="text-[11px] text-slate-500 mt-0.5">
                     General, licensing & enterprise requests
@@ -109,7 +109,7 @@ export default function Contact() {
                     Corporate Headquarters
                   </p>
                   <p className="text-sm font-bold text-white">
-                    SQB Tech Innovations Ltd.
+                    Tech SQB Innovations Ltd.
                   </p>
                   <p className="text-[11px] text-slate-500 mt-0.5">
                     Silicon Valley & Remote Engineering Labs
@@ -139,7 +139,7 @@ export default function Contact() {
                     Message Transmitted!
                   </h3>
                   <p className="text-sm text-slate-400 max-w-sm mx-auto">
-                    Thank you for contacting SQB Tech. An engineer will follow
+                    Thank you for contacting Tech SQB. An engineer will follow
                     up with you shortly at{" "}
                     <strong className="text-cyan-400">{formData.email}</strong>.
                   </p>
@@ -227,7 +227,7 @@ export default function Contact() {
                     className="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl font-bold text-sm bg-gradient-to-r from-cyan-400 to-blue-600 hover:from-cyan-300 hover:to-blue-500 text-slate-950 shadow-[0_0_25px_rgba(0,210,255,0.35)] transition-all cursor-pointer"
                   >
                     <Send className="w-4 h-4" />
-                    <span>Send Message to SQB Tech</span>
+                    <span>Send Message to Tech SQB</span>
                   </button>
                 </form>
               )}

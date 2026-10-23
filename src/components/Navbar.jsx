@@ -30,7 +30,7 @@ export default function Navbar({
             <div className="h-11 sm:h-12 flex items-center bg-transparent">
               <img
                 src="/Logo.png"
-                alt="SQB Tech Logo"
+                alt="Tech SQB Logo"
                 className="h-full w-auto object-contain mix-blend-screen bg-transparent"
                 onError={(e) => {
                   e.target.style.display = "none";
@@ -38,7 +38,7 @@ export default function Navbar({
                 }}
               />
               <div className="hidden items-center text-xl font-black bg-gradient-to-r from-white via-slate-200 to-cyan-400 bg-clip-text text-transparent">
-                SQB Tech
+                Tech SQB
               </div>
             </div>
 

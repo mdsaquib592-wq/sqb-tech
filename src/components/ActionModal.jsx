@@ -38,7 +38,7 @@ export default function ActionModal({ activeAction, onClose, user }) {
       key: "rzp_test_TrIvQlnDaYxCw4", // Replace with your Test or Live Key from dashboard.razorpay.com
       amount: Math.round(Number(item.price) * 100), // Amount in paise/cents
       currency: "INR", // Change to "USD" if using international currency
-      name: "SQB Tech",
+      name: "Tech SQB",
       description: `Purchase: ${item.title}`,
       image: "/Logo.png",
       prefill: {

@@ -7,12 +7,12 @@ export default function Footer() {
         <div className="flex items-center gap-3">
           <img
             src="/Logo.png"
-            alt="SQB Tech"
+            alt="Tech SQB"
             className="w-10 h-10 rounded-lg object-contain bg-black border border-cyan-500/30"
             onError={(e) => (e.target.style.display = "none")}
           />
           <div>
-            <p className="text-white font-bold text-sm">SQB Tech</p>
+            <p className="text-white font-bold text-sm">Tech SQB</p>
             <p className="text-[11px] text-slate-500">
               Enterprise Software Products &amp; Full-Stack Web Services
             </p>
@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
 
         <p className="text-slate-500">
-          © {new Date().getFullYear()} SQB Tech. All rights reserved.
+          © {new Date().getFullYear()} Tech SQB. All rights reserved.
         </p>
       </div>
     </footer>

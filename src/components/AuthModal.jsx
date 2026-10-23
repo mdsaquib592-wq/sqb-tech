@@ -107,8 +107,8 @@ export default function AuthModal({
           </div>
           <h3 className="text-2xl font-black text-white">
             {mode === "login"
-              ? "Sign In to SQB Tech"
-              : "Create SQB Tech Account"}
+              ? "Sign In to Tech SQB"
+              : "Create Tech SQB Account"}
           </h3>
           {pendingAction ? (
             <p className="text-xs text-amber-300 bg-amber-500/10 border border-amber-500/30 rounded-lg px-3 py-2 mt-2">

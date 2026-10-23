@@ -7,7 +7,7 @@ export default function Hero({ user, onOpenAuth }) {
       id="top"
       className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-28 border-b border-slate-800/80"
     >
-      {/* Glowing Cyan Spotlight Effect matching SQB Tech Logo */}
+      {/* Glowing Cyan Spotlight Effect matching Tech SQB Logo */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[420px] bg-gradient-to-b from-cyan-500/25 via-blue-600/10 to-transparent blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -16,7 +16,7 @@ export default function Hero({ user, onOpenAuth }) {
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-400/30 text-cyan-300 text-xs font-semibold">
               <Shield className="w-3.5 h-3.5 text-cyan-400" />
-              <span>OFFICIAL SQB TECH DIGITAL MARKETPLACE</span>
+              <span>OFFICIAL Tech SQB DIGITAL MARKETPLACE</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1]">
@@ -33,7 +33,7 @@ export default function Hero({ user, onOpenAuth }) {
             <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
               Explore our curated horizontal catalog of enterprise desktop
               software and full-stack web engineering services. Sign in to your{" "}
-              <span className="text-white font-semibold">SQB Tech</span> account
+              <span className="text-white font-semibold">Tech SQB</span> account
               to unlock instant installers, license keys, and direct service
               ordering.
             </p>
@@ -91,7 +91,7 @@ export default function Hero({ user, onOpenAuth }) {
                 <div className="w-full h-72 sm:h-80 md:h-96 flex items-center justify-center rounded-2xl bg-slate-950 border border-cyan-500/30 overflow-hidden mb-6 relative group shadow-inner">
                   <img
                     src="/Hero.png"
-                    alt="SQB Tech Platform Showcase"
+                    alt="Tech SQB Platform Showcase"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                     onError={(e) => {
                       e.target.style.display = "none";
@@ -102,7 +102,7 @@ export default function Hero({ user, onOpenAuth }) {
                   <div className="hidden flex-col items-center justify-center p-6 text-center">
                     <Cpu className="w-14 h-14 text-cyan-400 mb-3 animate-pulse" />
                     <span className="text-3xl font-black tracking-wider bg-gradient-to-b from-white via-slate-300 to-slate-500 bg-clip-text text-transparent">
-                      SQB Tech
+                      Tech SQB
                     </span>
                     <span className="text-[11px] text-cyan-400 mt-1">
                       Place your founder.jpg inside the /public folder

@@ -19,7 +19,7 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import { collection, onSnapshot, query, orderBy } from "firebase/firestore";
 
 // Designated Master Admin Email
-const ADMIN_EMAIL = "admin@sqbtech.com";
+const ADMIN_EMAIL = "admin@techsqb.com";
 
 export default function App() {
   const [softwareList, setSoftwareList] = useState(initialSoftwareProducts);
