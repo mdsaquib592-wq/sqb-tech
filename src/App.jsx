@@ -10,13 +10,14 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import AuthModal from "./components/AuthModal";
 import ActionModal from "./components/ActionModal";
+import ProductModal from "./components/ProductModal";
 import AdminPanel from "./components/AdminPanel";
 import Footer from "./components/Footer";
 
 // Firebase Imports
 import { auth, db } from "./firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { collection, onSnapshot, query, orderBy } from "firebase/firestore";
+import { collection, onSnapshot, query } from "firebase/firestore";
 
 // Designated Master Admin Email
 const ADMIN_EMAIL = "admin@techsqb.com";
@@ -40,6 +41,7 @@ export default function App() {
   const [authMode, setAuthMode] = useState("login");
   const [pendingAction, setPendingAction] = useState(null);
   const [activeAction, setActiveAction] = useState(null);
+  const [selectedProduct, setSelectedProduct] = useState(null); // For Product Preview Modal
   const [showAdmin, setShowAdmin] = useState(false);
 
   // 1. Listen for persistent user logins
@@ -85,6 +87,11 @@ export default function App() {
     });
     return () => unsubscribe();
   }, []);
+
+  // Handle clicking a product card to open preview/demo modal
+  const handleCardClick = (item) => {
+    setSelectedProduct(item);
+  };
 
   // Intercept Download/Purchase if user is not logged in
   const handleProtectedAction = (item, actionType) => {
@@ -146,11 +153,12 @@ export default function App() {
       <HorizontalSlider
         id="software-slider"
         title="Software Products Marketplace"
-        subtitle="Swipe to browse all software items. Real-time updates automatically sync when new products are added by the Admin."
+        subtitle="Swipe to browse all software items and projects. Click any item to preview specs, test features, or buy licenses."
         badgeText="Direct Software Downloads"
         items={softwareList}
         type="software"
         user={user}
+        onCardClick={handleCardClick}
         onProtectedAction={handleProtectedAction}
       />
 
@@ -162,6 +170,7 @@ export default function App() {
         items={servicesList}
         type="service"
         user={user}
+        onCardClick={handleCardClick}
         onProtectedAction={handleProtectedAction}
       />
 
@@ -185,6 +194,12 @@ export default function App() {
         activeAction={activeAction}
         onClose={() => setActiveAction(null)}
         user={user}
+      />
+
+      {/* Product Preview & Demo Modal */}
+      <ProductModal
+        product={selectedProduct}
+        onClose={() => setSelectedProduct(null)}
       />
     </div>
   );
